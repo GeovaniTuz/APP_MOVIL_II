@@ -1,0 +1,63 @@
+div {
+    height: 120px;
+    width: 120px;
+    margin-left: 50px;
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f2f1ee;
+    border: 1px solid #000;
+}
+
+.bordea {
+    border-radius: 24px;
+}
+
+.bordeb {
+    border-top-left-radius: 24px;
+}
+
+.bordec {
+    border-radius: 24px 0;
+}
+
+.borded {
+    border-radius: 36px 12px;
+}
+
+.bordee {
+    border-top-right-radius: 50px 30px;
+}
+
+.bordef {
+    border-bottom-right-radius: 50px 30px;
+}
+
+.bordeg {
+    border-radius: 50%;
+}
+
+.bordeh {
+    border-radius: 50% 50% 0 0;
+}
+
+.bordei {
+    border-radius: 0 20px 20px 0;
+}
+
+.bordej {
+    border-radius: 20px 0 0 20px;
+}
+
+.bordek {
+    border-radius: 0 50% 0 50%;
+}
+
+.bordel {
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
