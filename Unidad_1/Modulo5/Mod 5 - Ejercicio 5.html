@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Mod 5 - Ejercicio 5</title>
+    <style>body{text-align: center;}</style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" >
+    function mostrar_fecha(){
+        $("#fecha").html(new Date());
+    }
+    $(function(){
+        //define evento periodico
+        //cada segundo (1000 milisegundos)
+        setInterval(mostrar_fecha,1000);
+
+        //muestra fecha al cargar
+        mostrar_fecha();
+    });
+        </script>
+</head>
+<body>
+    <h3>Reloj</h3>
+    <strong id="fecha"></strong>
+</body>
+</html>

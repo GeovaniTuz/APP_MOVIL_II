@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Mod 5 - Ejercicio 4</title>
+    <style>body{text-align: center;}</style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" >
+    $(function(){
+        var img = $('#il');
+        img.on('dbclick', function(){img.attr('src', 'shaum4.jpg')});
+        img.on('click', function(){img.attr('src', 'shaum5.jpg')});
+    });
+        </script>
+</head>
+<body>
+    <h3>Eventos en jQuery</h3>
+    <img src="shaum4.jpg" id="il">
+</body>
+</html>
