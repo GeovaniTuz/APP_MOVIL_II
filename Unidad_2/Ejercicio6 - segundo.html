@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="materialunidad2/jquery-2.1.4.js"></script>
+    <script src="materialunidad2/jquery-ui.min.js"></script>
+    <script src="materialunidad2/jquery.ui.touch-punch.min.js"></script>
+    <style type="text/css">
+    body, html {width: 100%; height: 100%;
+    padding: 0; margin: 0;
+    overflow: hidden;
+    }
+    #caja {
+        position: absolute;
+        left: 5%; bottom: 5%;
+        border: 1px solid #000000;
+    }
+    h1 {
+        font-family: Gotham, "Helvetica Neue", Arial, Helvetica, sans-serif;
+        padding-left: 1em; padding-bottom: 0.2em;
+        border-bottom: 1px solid #000000;
+    }
+    </style>
+    
+    <script>
+        var _45_degrees_more = function (){
+            var angle = 0;
+            return function (){ return (angle += 45);};
+        };
+
+        $(function(){
+            $(".draggable").draggable({stack:"img"});
+
+            $("img").each(function (index, elem){
+                var rotate = _45_degrees_more();
+                $(elem).on("click tap", function (){
+                    $(this).css({'transform':'rotate('+ rotate()+'deg'});
+                });
+            });
+        });
+    </script>
+    <title>Ejercicio 6</title>
+
+</head>
+<body>
+    <img src="materialunidad2/Imagenes_Tangram/tangram1.svg" alt="" class="draggable">
+    <img src="materialunidad2/Imagenes_Tangram/tangram2.svg" alt="" class="draggable">
+    <img src="materialunidad2/Imagenes_Tangram/tangram3.svg" alt="" class="draggable">
+    <img src="materialunidad2/Imagenes_Tangram/tangram4.svg" alt="" class="draggable">
+    <img src="materialunidad2/Imagenes_Tangram/tangram5.svg" alt="" class="draggable">
+    <img src="materialunidad2/Imagenes_Tangram/tangram6.svg" alt="" class="draggable">
+    <img src="materialunidad2/Imagenes_Tangram/tangram7.svg" alt="" class="draggable">
+    
+    <div id="caja">
+        <img src="materialunidad2/Imagenes_Tangram/sol1.jpg" alt=""></div>
+</body>
+</html>

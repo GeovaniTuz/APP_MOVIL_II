@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="materialunidad2/jquery-2.1.4.js"></script>
+    <script src="materialunidad2/jquery-ui.min.js"></script>
+    <style>
+        * {margin: 0; padding: 0;}
+        #sortable {list-style-type:none;}
+        #sortable li {float: left; width: 33.3%;}
+        #sortable li img {
+            vertical-align: bottom;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
+        });
+    </script>
+    <title>Ejercicio 3</title>
+</head>
+<body>
+   <ul id="sortable">
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_8.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_4.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_6.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_2.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_9.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_3.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_7.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_1.jpg"/></li>
+       <li><img src="materialunidad2/Imagenes_Puzzle/rafael_5.jpg"/></li>
+   </ul> 
+</body>
+</html>

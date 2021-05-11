@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialunidad2/jquery.mobile-1.4.5.min.css">
+    <script src="materialunidad2/jquery-2.1.4.min.js"></script>
+    <script src="materialunidad2/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        * {-webkit-touch-callout: none; /*anula el efecto visual del touch prolongado sobre el objeto*/
+        user-select: none; /*user-select, hace que el objeto no sea seleccionable*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*anula el feedback de color al hacer tap en un link*/
+        -webkit-tap-highlight-color: transparent; /*similar al anterior en algunos android*/
+        }
+        body {text-align: center;}
+    </style>
+
+    <script type="text/javascript">
+    $(function(){
+        $.event.special.tap.emitTap0nTaphold = false;
+        $("#i1").on("tap",function(){$('img').attr('src','materialunidad2/lamp_on.jpg')});
+        $("#i1").on("taphold",function(){$('img').attr('src','materialunidad2/lamp_off.jpg')});
+        $("#i1").on("swipe",function() {$('img').attr('src','materialunidad2/lamp_off.jpg')});
+        
+    });
+    </script>
+
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Eventos jQuery</h1>
+    <img src="materialunidad2/lamp_off.jpg" id="i1" alt="Bombilla">
+</body>
+</html>
