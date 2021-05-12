@@ -7,6 +7,9 @@
     <script src="materialunidad2/jquery-2.1.4.js"></script>
     <script src="materialunidad2/jquery-ui.min.js"></script>
     <script src="materialunidad2/jquery.ui.touch-punch.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style type="text/css">
     body, html {width: 100%; height: 100%;
     padding: 0; margin: 0;
@@ -22,6 +25,7 @@
         padding-left: 1em; padding-bottom: 0.2em;
         border-bottom: 1px solid #000000;
     }
+    
     </style>
     
     <script>
@@ -39,6 +43,32 @@
 
 </head>
 <body>
+    <div class="container">
+        <!--Navegador-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">MOOC</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="Ejercicio4.html">ROMPECABEZAS</a></li>
+                        <li class="active"><a href="Ejercicio6.html">TANGRAM</a></li>
+                        <li><a href="Ejercicio5.html">OPCION 3</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="sortable">
     <img src="materialunidad2/Imagenes_Tangram/tangram1.svg" alt="" class="draggable">
     <img src="materialunidad2/Imagenes_Tangram/tangram2.svg" alt="" class="draggable">
     <img src="materialunidad2/Imagenes_Tangram/tangram3.svg" alt="" class="draggable">
@@ -48,6 +78,8 @@
     <img src="materialunidad2/Imagenes_Tangram/tangram7.svg" alt="" class="draggable">
     
     <div id="caja">
-        <img src="materialunidad2/Imagenes_Tangram/sol1.jpg" alt=""></div>
+        <img src="materialunidad2/Imagenes_Tangram/sol1.jpg" alt="">
+    </div>
+    </div>
 </body>
 </html>
