@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - iframe2</title>
+    <script type="text/javascript" src="archivosu3/Carrusel de Citas PAg 32/zeptoo/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="archivosu3/Carrusel de Citas PAg 32/css/Estilo-iframe.css">
+    <script>
+        $(function (){
+            localStorage.str1 = localStorage.str1 || '["https://getbootstrap.com","http://vishub.org"]';
+            var urls = JSON.parse(localStorage.str1);
+
+            function mostrar(urls){
+                var i,iframes="";
+
+                for (i=0; i<urls.length; ++i){
+                    iframes += "<iframe> src='"+urls[i]+"'></iframe>";
+                }
+                $('#iframes').html(iframes);
+            };
+
+            $("#boton").on('click',function (){
+                urls = JSON.parse(localStorage.str1);
+                urls.push($('#nuevo').val());
+                mostrar(urls);
+                localStorage.str1 = JSON.stringify(urls);  
+            });
+            mostrar(urls);
+        });
+    </script>
+</head>
+<body>
+    <h3>Ejemplos de diseños reponsivos</h3>
+
+    <input type="text" id="nuevo" placeholder="Nuevo URL">
+    <button type="button" id="boton">Añadir</button>
+        <div id="marco"><div id="iframes"></div></div>
+</body>
+</html>
