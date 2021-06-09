@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Frases</title>
+    <script src="archivosu3/Carrusel de Citas PAg 32/javascript/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="archivosu3/Carrusel de Citas PAg 32/css/citas.css">
+    <link rel="stylesheet" href="archivosu3/Carrusel de Citas PAg 32/css/Estiloos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        var galeria = [
+            {
+                persona:"Confucio - 孔子",
+                frase:"Todo tiene belleza pero no todo el mundo la puede ver.",
+                foto:"archivosu3/Carrusel de Citas PAg 32/javascript/confucio.png"
+            },
+            {
+                persona: "Henrik Ibsen - hɛnɾɪk ˈjoːhɑn ˈɪpsən",
+                frase:"Si dudas de ti mismo, estás vencido de antemano.",
+                foto:"archivosu3/Carrusel de Citas PAg 32/javascript/ibsen.png"
+            }
+        ];
+
+        $(function(){
+            var i = Math.floor(Math.random()*galeria.length);
+
+            $("#persona").html(galeria[i].persona);
+            $("#frase").html(galeria[i].frase);
+            $("#foto").attr("src", galeria[i].foto);
+        });
+    </script>
+</head>
+<body>
+
+    <div style="background-color: rgb(202, 190, 173);" class="jumbotron text-center">
+        <h1> Frases </h1>
+        <center>
+        <div id="caja">
+            <img id=foto alt="" />
+            <div class="textos">
+                <p id="frase"></p>
+                <p id="persona"></p>
+            </div>
+        </div>
+        </center>
+      </div>
+        
+      <div  class="container">
+        <div class="row">
+          <div class="official-info">
+            <h3>Ejercicio 1: Citas Famosas</h3>
+            <p>Se muestra algunas de las citas las cuales se pueden eliminar y agregar, se restablece
+              cuando se recarga la pagina</p>
+            <a href="Ejercicio1.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3 id="fijado">Ejercicio 2: Frases</h3>
+            <p>Se muestra aleatoriamente dos imagenes, cuando se recarga la pagina,
+              al igual de que se puede visualizar una pequeña frase.
+            </p>
+            <a href="Ejercicio2 - Frases.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>Ejercicio 3: Carrusel</h3>        
+            <p>A traves de la llamada de ciertos archivos y el uso de jquery, en este pequeño apartado se puede observar
+              algunas de las imagenes que cada cierto tiempo cambian automaticamente, al igual de que se puede seleccionar
+              alguno de las imagenes que se muestra a traves de los botones que se encuentran en la parte inferior.
+            </p>
+            <a href="archivosu3/Carrusel de Citas PAg 32/javascript/Ejercicio3 - Carrusel.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>Ejercicio 4: Cronómetro</h3>        
+            <p>En este apartado se podra observar un cronometro en el cual da la opcion de detenerlo y continuar con la ejecucion,
+              en este caso recargando la pagina se restablece.
+            </p>
+            <a href="Ejercicio 4 - Cronometro.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>Ejercicio 5: LocalStorage</h3>        
+            <p>En este ejercicio lo que se visualiza es las veces que se visita la pagina por el usuario guardando el dato sin perderlo,
+              en este  caso se ejecuta en localhost, por lo cual cuando se cierra la conexion se reinicia, el contador.
+            </p>
+            <a href="Ejercicio 5 - LocalStorage.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>Ejercicio 6: Cronómetro con LocalStorage</h3>        
+            <p>La diferencia del cronometro en este apartado es la recarga de la pagina,
+              ya que si se recarga y el cronometro fue detenido, este conserva el dato y no se pierde (En este caso que se ejecuta en localhost
+              se puede reiniciar al apagarse).
+            </p>
+            <a href="Ejercicio 6 - cronometro-localstorage .html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>Ejercicio 7: iFrame</h3>        
+            <p>Se muestra un pequeño juego que es llamado a traves de una URL externa</p>
+            <a href="Ejercicio 7 - iFrame.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>Ejercicio 8: </h3>        
+            <p>A traves del diseño se puede observar paginas en pequeñas ventanas. Las URL tiene un apartado donde agregan y
+              cada uno de estas se almacena en una caja, en este caso de se encuentran predefinidas dos URL.
+            </p>
+            <a href="Ejercicio8.html"><button>Ver mas...</button></a>
+          </div>
+          <div class="official-info">
+            <h3>WebService</h3>        
+            <p>En este ultimo apartado se hace el uso de WebService, en la pagina se llama los datos de una base de datos, las
+              cuales se pueden agregar y visualizar en una pequela pagina creada, se realizan pequeñas consultas y conexion con la base de datos
+              para que funcione correctamente.
+            </p>
+            <a href="webservice2/index.php"><button>Ver mas...</button></a>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+</html>

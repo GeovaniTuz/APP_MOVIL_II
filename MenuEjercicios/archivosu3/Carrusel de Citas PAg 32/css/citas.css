@@ -1,0 +1,28 @@
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#ccc;
+}
+#caja {
+	position:relative;
+	width:25%;
+	height:25%;
+}
+#foto{
+	width:auto;
+	height:auto;
+}
+.textos {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 50%;
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: large;
+}
+#persona {
+	font-style: italic;
+}
+
