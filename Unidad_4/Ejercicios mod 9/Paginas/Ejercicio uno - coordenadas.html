@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../material/estil.css">
+<title>Ejemplo de W3C Geolocalización Api</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+if (navigator.geolocation) { //Check if browser supports W3C Geolocation API
+navigator.geolocation.getCurrentPosition (successFunction, errorFunction);
+} else { alert('Geolocation is not supported in this browser.'); }
+function successFunction(position) {
+var lat = position.coords.latitude;
+var long = position.coords.longitude;
+alert('Your latitude is :'+lat+' and longitude is '+long);
+}
+function errorFunction(position) { alert('Error!'); }
+</script>
+</head>
+<body class="fondoprincipal">
+    <nav>
+        <h2>Ejercicios Unidad 4 </h2>
+         <input id="toggle" type="checkbox" checked>
+      <ul>
+        <li><a id="activo" href="Ejercicio uno - coordenadas.html">Coordenadas</a></li>
+        <li><a href="Ejercicio dos - Geo Mapa.html">Geo Mapa</a></li>
+        <li><a href="Ejercicio tres - Grafico SVG.html"> Grafico SVG</a></li>
+        <li><a href="Ejercicio cuatro - Reloj svg statico.html">Reloj SVG statico</a></li>
+        <li><a href="Ejercicio  cinco - Reloj transform coordenadas.html">Reloj transform coordenadas</a></li>
+        <li><a href="Ejercicio 6 - Reloj con estilo.html">Reloj con estilo</a></li>
+      </ul>
+   </nav>
+   <br>
+   <h1>Muestra mis coordenadas</h1>
+    <div class="mitad">
+    <div id="text">
+      <p>Si tu navegador soporta la Geolocalización TU deberías de tener un alerta de tus coordenadas.</p>
+      <br>
+<p>Lee el <a href="http://dev.opera.com">Dev.Opera</a> Artículo <a
+href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">"Como usar el W3C Api de Geolocalización"</a>.
+    </div>
+    </div>
+
+</body>
+</html>

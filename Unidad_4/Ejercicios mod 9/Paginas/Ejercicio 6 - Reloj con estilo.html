@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../material/estil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../material/zepto.min.js"></script>
+    <title>Reloj con estilo</title>
+    <script>
+        function x2(n,i,x1,r){return x1 + r*Math.sin(2*Math.PI*n/i);};
+        function y2(n,i,y1,r){return y1 - r*Math.cos(2*Math.PI*n/i);};
+
+        function mostrar_hora(){
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+
+            $('#text').html(h+":"+m+":"+s);
+            $('#seg').attr('x2',x2(s,60,80,50)).attr('y2',y2(s,60,80,50));
+            $('#min').attr('x2',x2(m,60,80,40)).attr('y2',y2(m,60,80,40));
+            $('#hor').attr('x2',x2(h,12,80,30)).attr('y2',y2(h,12,80,30));
+        };
+        $(function(){
+            setInterval(mostrar_hora,1000);
+            mostrar_hora();
+        });
+    </script>
+
+</head>
+<body class="fondoprincipal">
+    <nav>
+        <h2>Ejercicios Unidad 4 </h2>
+         <input id="toggle" type="checkbox" checked>
+      <ul>
+        <li><a href="Ejercicio uno - coordenadas.html">Coordenadas</a></li>
+        <li><a href="Ejercicio dos - Geo Mapa.html">Geo Mapa</a></li>
+        <li><a href="Ejercicio tres - Grafico SVG.html"> Grafico SVG</a></li>
+        <li><a href="Ejercicio cuatro - Reloj svg statico.html">Reloj SVG statico</a></li>
+        <li><a href="Ejercicio  cinco - Reloj transform coordenadas.html">Reloj transform coordenadas</a></li>
+        <li><a id="activo" href="Ejercicio 6 - Reloj con estilo.html">Reloj con estilo</a></li>
+      </ul>
+   </nav>
+
+    <h1>Reloj</h1>
+    <div class="mitad">
+    <div id="text">Texto</div>
+    </div>
+    <!--por defecto es viewBox="-200 25 600 600"-->
+    <svg id="reloj" viewBox="-200 25 600 600">
+        <circle id='myCircle' cx='80' cy='80' r='50' fill='white' stroke='#db4e36' stroke-width='3'></circle>
+        <line id="hor" x1='80' y1='80' x2='80' y2='50' style="stroke:#db4e36; stroke-width:5"></line>
+        <line id="min" x1='80' y1='80' x2='80' y2='40' style="stroke:#db4e36; stroke-width:3"></line>
+        <line id="seg" x1='80' y1='80' x2='80' y2='30' style="stroke:red; stroke-width:1"></line>
+    </svg>
+
+</body>
+</html>

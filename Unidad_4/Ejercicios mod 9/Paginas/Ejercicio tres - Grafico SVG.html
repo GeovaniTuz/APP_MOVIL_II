@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../material/estil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../material/zepto.min.js"></script>
+    
+    <title>Ejemplo SVG</title>
+
+    <script>
+        $(function (){
+            var img = $('#img');
+            $('#incr').on('click', function (){
+                img.width(img.width()*1.1);
+                img.height(img.height()*1.1);
+            });
+
+            $('#decr').on('click', function (){
+                img.width(img.width()/1.1);
+                img.height(img.height()/1.1);
+            });
+        });
+    </script>
+</head>
+<body class="fondoprincipal">
+    <nav>
+        <h2>Ejercicios Unidad 4 </h2>
+         <input id="toggle" type="checkbox" checked>
+      <ul>
+        <li><a  href="Ejercicio uno - coordenadas.html">Coordenadas</a></li>
+        <li><a href="Ejercicio dos - Geo Mapa.html">Geo Mapa</a></li>
+        <li><a id="activo" href="Ejercicio tres - Grafico SVG.html"> Grafico SVG</a></li>
+        <li><a href="Ejercicio cuatro - Reloj svg statico.html">Reloj SVG statico</a></li>
+        <li><a href="Ejercicio  cinco - Reloj transform coordenadas.html">Reloj transform coordenadas</a></li>
+        <li><a href="Ejercicio 6 - Reloj con estilo.html">Reloj con estilo</a></li>
+      </ul>
+   </nav>
+    <h1>Gráfico SVG</h4>
+    <div class="mitad">
+    <button class="boton_personalizado" id="decr">  -  </button>
+    <button class="boton_personalizado" id="incr">  +  </button>
+    </div>  
+    <br>
+    <img src="../material/smiley.svg"  id="img" width="150" height="150">
+</body>
+</html>

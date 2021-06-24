@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../material/estil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../material/zepto.min.js"></script>
+    <title>Relog Estatico SVG
+    </title>
+    <script>
+        /*
+        function animar (){
+            var d = new Date;
+            var s = d.getSeconds(); //grados = seconds * 6
+            var m = d.getMinutes(); //grados = minutos * 6
+            var h = d.getHours();
+            var hh = h*30 + m/2; //grados de la manecilla de horas
+            $("#text").html(h +":"+ m + ":"+ s);
+            $("#hor").attr("transform","rotate(" + hh + " 80 80)");
+            $("#min").attr("transform","rotate(" + m*6 + " 80 80)");
+            $("#seg").attr("transform","rotate(" + s*6 + " 80 80)");
+        }
+        $(function (){
+            setInterval(animar,1000);
+            animar();
+        });
+        */
+    </script>
+</head>
+<body class="fondoprincipal">
+    <nav>
+        <h2>Ejercicios Unidad 4 </h2>
+         <input id="toggle" type="checkbox" checked>
+      <ul>
+        <li><a  href="Ejercicio uno - coordenadas.html">Coordenadas</a></li>
+        <li><a href="Ejercicio dos - Geo Mapa.html">Geo Mapa</a></li>
+        <li><a href="Ejercicio tres - Grafico SVG.html"> Grafico SVG</a></li>
+        <li><a id="activo" href="Ejercicio cuatro - Reloj svg statico.html">Reloj SVG statico</a></li>
+        <li><a href="Ejercicio  cinco - Reloj transform coordenadas.html">Reloj transform coordenadas</a></li>
+        <li><a href="Ejercicio 6 - Reloj con estilo.html">Reloj con estilo</a></li>
+      </ul>
+   </nav>
+    <h1>Reloj SVG</h1>
+
+    <div class="mitad">
+        <div id="text">Texto</div>
+    </div>
+
+    <svg id="reloj" viewBox="-200 25 600 600">
+        <circle id='myCircle' cx='80' cy='80' r='50' fill='white' stroke='black' stroke-width='3'></circle>
+        <line id="hor" x1='80' y1='80' x2='80' y2='50' style="stroke:grey; stroke-width:5"></line>
+        <line id="min" x1='80' y1='80' x2='80' y2='40' style="stroke:grey; stroke-width:3"></line>
+        <line id="seg" x1='80' y1='80' x2='80' y2='30' style="stroke:red; stroke-width:1"></line>
+    </svg>
+</body>
+</html>

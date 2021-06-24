@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../material/estil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../material/mypath.css">
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="../material/gmaps.js"></script>
+    <script src="../material/zepto.min.js"></script>
+
+    <title>Geo - Mapa</title>
+    <script>
+        var map, lat, lng;
+
+        $(function(){
+
+            function geolocalizar(){
+                GMaps.geolocate({
+                    success: function (position){
+                        lat = position.coords.latitude;//guarda coordenadas en variables
+                        lng = position.coords.longitude;
+
+                    map = new GMaps({//muestra coordenadas en coords lat,lng
+                        el: '#map',
+                        lat: lat,
+                        lng: lng
+                    });
+                    map.addMarker({lat: lat, lng: lng});//marcador en lt y lng
+                    },
+                    error: function (error) {alert('Error:'+error.message);},
+                    not_supported: function (){alert("No soporta geolocalizacion");},
+                });
+            };
+            geolocalizar();
+        });
+    </script>   
+</head>
+<body class="fondoprincipal">
+
+    <nav>
+        <h2>Ejercicios Unidad 4 </h2>
+         <input id="toggle" type="checkbox" checked>
+      <ul>
+        <li><a href="Ejercicio uno - coordenadas.html">Coordenadas</a></li>
+        <li><a id="activo" href="Ejercicio dos - Geo Mapa.html">Geo Mapa</a></li>
+        <li><a href="Ejercicio tres - Grafico SVG.html"> Grafico SVG</a></li>
+        <li><a href="Ejercicio cuatro - Reloj svg statico.html">Reloj SVG statico</a></li>
+        <li><a href="Ejercicio  cinco - Reloj transform coordenadas.html">Reloj transform coordenadas</a></li>
+        <li><a href="Ejercicio 6 - Reloj con estilo.html">Reloj con estilo</a></li>
+      </ul>
+   </nav>
+
+   <br>
+   <br>
+   <br>
+   <div class="mitad">
+    <div id="text">Geolocalización</div>
+    </div>
+    <nav>
+    <div id="map"></div>
+    </nav>
+</body>
+</html>
