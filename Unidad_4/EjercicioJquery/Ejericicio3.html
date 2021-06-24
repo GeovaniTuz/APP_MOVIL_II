@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria query-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- cierre -->
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <div data-role="page" id="paginauno">
+        <div data-role="header">
+            <h1>JQueryMobile</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Bienvenido!</p>
+            <a href="#paginados">Ir a pagina de dialogo</a>
+        </div>
+
+        <div data-role="footer">
+            <h1>Este es un pie de pagina</h1>
+        </div>
+    </div>
+
+    <div data-role="page" data-dialog="true" id="paginados">
+        <div data-role="header">
+            <h1>Soy un cuadro de dialogo!</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>El cuadro de diálogo es diferente de una página normal, se muestra en la parte superior de la página actual y no abarcará todo el ancho de la página. El diálogo también tiene un icono de "X" en el encabezado para cerrar el cuadro.</p>
+            <a href="#paginauno">Ir a pagina Uno</a>
+        </div>
+
+        <div data-role="footer">
+            <h1>Pie del cuadro de dialogo</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

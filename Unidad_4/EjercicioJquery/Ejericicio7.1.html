@@ -19,16 +19,20 @@
 <body>
     <div data-role="page">
         <div data-role="header">
-            <h1>Bienvenido a JQuery <i class="fas fa-mobile-alt"></i></h1>
+            <h1>Bienvenido</h1>
         </div>
         <div data-role="main" class="ui-content">
-            <p>Soy un desarrollador de WebApss Mobiles!!</p>
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Muestra Popup</a>
+            <div data-role="popup" id="myPopup" class="ui-content">
+                <h3>Bienvenido!</h3>
+                <p>La clase "ui-content" se usa cuando tienes una ventana con <span style="font-size:55px;">Estilo de texto</span>, y desea que los bordes y las esquinas se vean más limpios y elegantes. <strong>Nota:</strong> El texto se ajustará a varias
+                    líneas si es necesario.</p>
+            </div>
         </div>
         <div data-role="footer">
-            <h1>Esto es un pie de pagina</h1>
+            <h1>Footer Text</h1>
         </div>
     </div>
-
 </body>
 
 </html>

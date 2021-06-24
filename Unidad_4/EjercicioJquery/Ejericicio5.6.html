@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria query-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- cierre -->
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1>Bienvenido</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Normal / Default button:</p>
+            <a href="#pagetwo" class="ui-btn">Ir a pagina 2</a>
+            <p>Inline button:</p>
+            <a href="#pagetwo" class="ui-btn ui-btn-inline">Ir a pagina 2</a>
+        </div>
+        <div data-role="footer">
+            <h1>Pie de pagina 1</h1>
+        </div>
+    </div>
+    <div data-role="page" id="pagetwo">
+        <div data-role="header">
+            <h1>Bienvenido a pagina 2</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Botones en linea (aparecen lado a lado en toda la fila):</p>
+            <a href="#pageone" class="ui-btn ui-btn-inline">Ir a pagina 1</a>
+            <a href="#pageone" class="ui-btn ui-btn-inline">Ir a pagina 1</a>
+            <a href="#pageone" class="ui-btn ui-btn-inline">Ir a pagina 1</a>
+        </div>
+        <div data-role="footer">
+            <h1>Pie de pagina 2</h1>
+        </div>
+    </div </body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Frases</title>
+    <script type="text/javascript" src="archivosu3/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="archivosu3/citas.css">
+    <script>
+        var galeria = [
+            {
+                persona:"Confucio - 孔子",
+                frase:"Todo tiene belleza pero no todo el mundo la puede ver.",
+                foto:"archivosu3/Carrusel de Citas PAg 32/javascript/confucio.png"
+            },
+            {
+                persona: "Henrik Ibsen - hɛnɾɪk ˈjoːhɑn ˈɪpsən",
+                frase:"Si dudas de ti mismo, estás vencido de antemano.",
+                foto:"archivosu3/Carrusel de Citas PAg 32/javascript/ibsen.png"
+            }
+        ];
+
+        $(function(){
+            var i = Math.floor(Math.random()*galeria.length);
+
+            $("#persona").html(galeria[i].persona);
+            $("#frase").html(galeria[i].frase);
+            $("#foto").attr("src", galeria[i].foto);
+        });
+    </script>
+</head>
+<body>
+    <div id="caja">
+        <img id=foto alt="" />
+        <div class="textos">
+            <p id="frase"></p>
+            <p id="persona"></p>
+        </div>
+    </div>
+</body>
+</html>

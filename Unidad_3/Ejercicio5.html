@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - LocalStorage</title>
+    <script src="archivosu3/Carrusel de Citas PAg 32/zeptoo/zepto.min.js"></script>
+    <script>
+        $(function (){
+            //si la variable no existe se crea (la primera vista)
+            localStorage.cuenta = (localStorage.cuenta || 0);
+            //incrementamos cuenta de visitas
+            localStorage.cuenta++;
+
+            $("#cuenta").html(localStorage.cuenta);
+        });
+    </script>
+</head>
+<body>
+    <h3>Ejemplo de LocalStorage</h3>
+
+    Ha visitado esta pagina <span id="cuenta"></span> veces!
+</body>
+</html>

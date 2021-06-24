@@ -17,18 +17,28 @@
 </head>
 
 <body>
-    <div data-role="page">
+    <div data-role="page" id="pageone">
         <div data-role="header">
-            <h1>Bienvenido a JQuery <i class="fas fa-mobile-alt"></i></h1>
+            <h1>Ejemplo de boton hacia atras</h1>
         </div>
         <div data-role="main" class="ui-content">
-            <p>Soy un desarrollador de WebApss Mobiles!!</p>
+            <a href="#pagetwo" class="ui-btn">Ir a pagina 2</a>
         </div>
         <div data-role="footer">
-            <h1>Esto es un pie de pagina</h1>
+            <h1>Pie de pagina 1</h1>
         </div>
     </div>
-
+    <div data-role="page" id="pagetwo">
+        <div data-role="header">
+            <h1>Regreso a pagina 1</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <a href="#" class="ui-btn" data-rel="back">Atras</a>
+        </div>
+        <div data-role="footer">
+            <h1>Pie de pagina 2</h1>
+        </div>
+    </div>
 </body>
 
 </html>

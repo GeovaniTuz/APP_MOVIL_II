@@ -19,16 +19,20 @@
 <body>
     <div data-role="page">
         <div data-role="header">
-            <h1>Bienvenido a JQuery <i class="fas fa-mobile-alt"></i></h1>
+            <h1>Bienvenido</h1>
         </div>
         <div data-role="main" class="ui-content">
-            <p>Soy un desarrollador de WebApss Mobiles!!</p>
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Muestra Popup</a>
+            <div data-role="popup" id="myPopup" class="ui-content">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
+                <p>Tengo un boton en la esquina derecha.</p>
+                <p><b>Tip:</b> Para cerarr puedes hacer clic afuera de esta ventana ó en el icono cerrar.</p>
+            </div>
         </div>
         <div data-role="footer">
-            <h1>Esto es un pie de pagina</h1>
+            <h1>Pie de pagina</h1>
         </div>
     </div>
-
 </body>
 
 </html>

@@ -17,18 +17,30 @@
 </head>
 
 <body>
-    <div data-role="page">
+    <div data-role="page" id="paginauno">
         <div data-role="header">
-            <h1>Bienvenido a JQuery <i class="fas fa-mobile-alt"></i></h1>
+            <h1>Botones</h1>
         </div>
         <div data-role="main" class="ui-content">
-            <p>Soy un desarrollador de WebApss Mobiles!!</p>
+            <p>Bienvenido!</p>
+            <a href="#paginados" class="ui-btn">Ir a pagina 2</a>
         </div>
         <div data-role="footer">
-            <h1>Esto es un pie de pagina</h1>
+            <h1>Pie de pagina 1</h1>
         </div>
     </div>
-
+    <div data-role="page" id="paginados">
+        <div data-role="header">
+            <h1>Botones</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Adios!</p>
+            <a href="#paginauno" class="ui-btn">Ir a pagina 1</a>
+        </div>
+        <div data-role="footer">
+            <h1>Pie de pagina 2</h1>
+        </div>
+    </div>
 </body>
 
 </html>
