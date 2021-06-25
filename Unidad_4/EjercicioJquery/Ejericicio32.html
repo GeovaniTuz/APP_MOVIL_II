@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria query-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- cierre -->
+    <title>Ejercicio</title>
+
+
+    <style>
+        .ui-block-a,
+        .ui-block-b {
+            background-color: rgb(161, 238, 228);
+            border: 1px solid rgb(95, 168, 216);
+            height: 300px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div data-role="page" id="pageone" data-theme="b">
+        <div data-role="header">
+            <h1>Manejo de Columnas</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Diseño de dos columnas:</p>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow">Botón de primera columna</a>
+                    <br>
+                    <span>Primera Columna: Este es un texto. Este es un texto Este es un texto Este es un texto Este es un texto.</span>
+                </div>
+
+                <div class="ui-block-b">
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow">Botón de segunda columna</a> <br>
+                    <span>Segunda Columna: Este es un texto. Este es un texto Este es un texto Este es un texto Este es un texto.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria query-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- cierre -->
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <div data-role="page" id="pageone" data-theme="a">
+        <!--tema
+        se cambia con la " data-theme="b"
+        claro:  <div data-role="page" id="pageone" data-theme="a">
+        oscuro:  <div data-role="page" id="pageone" data-theme="b">
+        "
+        -->
+        <div data-role="header">
+            <h1>Encabezado</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Algo de textot..</p>
+            <a href="#">A Standard Text Link</a>
+            <a href="#" class="ui-btn">Link Button</a>
+            <p>A List View:</p>
+            <ul data-role="listview" data-autodividers="true" data-inset="true">
+                <li><a href="#">Adele</a></li>
+                <li><a href="#">Billy</a></li>
+            </ul>
+            <label for="fullname">Input Field:</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Name..">
+            <label for="switch">Toggle Switch:</label>
+            <select name="switch" id="switch" data-role="slider">
+          <option value="on">On</option>
+          <option value="off" selected>Off</option>
+         </select>
+        </div>
+
+        <div data-role="footer">
+            <h1>Pie de pagina</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

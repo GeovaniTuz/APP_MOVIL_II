@@ -19,13 +19,18 @@
 <body>
     <div data-role="page" id="pageone">
         <div data-role="header">
-            <h1>Block desplegable</h1>
+            <h1>Filtrar cualquier tipo de elementos siempre y cuando sean hijos(child)</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-                <h1>El icono de datos contraídos especifica el icono del botón</h1>
-                <p>El icono de datos expandidos especifica el icono del botón cuando se expande el contenido.</p>
+            <form>
+                <input data-type="search" id="divOfPs-input">
+            </form>
+            <div class="elements" data-filter="true" data-input="#divOfPs-input">
+                <p><strong>These</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                <p><strong>p elements</strong> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+                <p><strong>are</strong> et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
+                <p><strong>filterable</strong> Me van elegir solo tecleando "encontrado"</p>
             </div>
         </div>
 

@@ -1,3 +1,6 @@
 1.-estrutura: http://snte-tics-educacion.blogspot.com/2019/04/15-barra-de-herramientas-jquery-mobile.html
 2.-iconos: http://snte-tics-educacion.blogspot.com/2019/04/20-barras-de-navegacion-con-iconos.html
 3.- panel: http://snte-tics-educacion.blogspot.com/2019/04/24-paneles-en-query-mobile.html
+4.-listview: http://snte-tics-educacion.blogspot.com/2019/05/34-list-views-jquery-mobile.html
+5.-listview + paneles: http://snte-tics-educacion.blogspot.com/2019/05/36-como-insertar-paneles-en-los.html
+6.-filtro: http://snte-tics-educacion.blogspot.com/2019/05/44-elementos-filtreables-jquery-mobile.html

@@ -17,23 +17,25 @@
 </head>
 
 <body>
-    <div data-role="page" id="pageone">
+    <div data-role="page">
         <div data-role="header">
-            <h1>Block desplegable</h1>
+            <h1>Welcome To My Homepage</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-                <h1>El icono de datos contraídos especifica el icono del botón</h1>
-                <p>El icono de datos expandidos especifica el icono del botón cuando se expande el contenido.</p>
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-b ui-btn-inline ui-corner-all">Show Popup</a>
+            <div data-role="popup" id="myPopup" class="ui-content" data-theme="b">
+                <a href="#" data-rel="back" class="ui-btn ui-btn-a ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <p>I am a themed popup!.</p>
+                <p>I have a close button at the top right corner.</p>
+                <p><b>Tip:</b> You can also click outside to close me.</p>
             </div>
         </div>
 
         <div data-role="footer">
-            <h1>Pie de pagina</h1>
+            <h1>Footer Text</h1>
         </div>
     </div>
-
 </body>
 
 </html>

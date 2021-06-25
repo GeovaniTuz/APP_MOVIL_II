@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-block-a,
+        .ui-block-b,
+        .ui-block-c {
+            background-color: rgb(161, 238, 228);
+            border: 1px solid rgb(95, 168, 216);
+            height: 100px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1>Multiples Filas</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Diseño de 3 columnas:</p>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-b" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-c" style="border:1px solid black;"><span>Some Text</span> </div>
+            </div>
+
+            <p>Diseño de 3 columnas con multiples filass:</p>
+
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-b" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-c" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-a" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-b" style="border:1px solid black;"><span>Some Text</span> </div>
+
+                <div class="ui-block-a" style="border:1px solid black;"><span>Some Text</span> </div>
+            </div>
+        </div>
+    </div>

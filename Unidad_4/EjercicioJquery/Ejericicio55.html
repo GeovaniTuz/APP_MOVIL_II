@@ -17,20 +17,28 @@
 </head>
 
 <body>
-    <div data-role="page" id="pageone">
+
+    <div data-role="page">
         <div data-role="header">
-            <h1>Block desplegable</h1>
+            <h1>Encabezado</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-                <h1>El icono de datos contraídos especifica el icono del botón</h1>
-                <p>El icono de datos expandidos especifica el icono del botón cuando se expande el contenido.</p>
-            </div>
-        </div>
-
-        <div data-role="footer">
-            <h1>Pie de pagina</h1>
+            <form method="post" action="demoform.asp">
+                <fieldset class="ui-field-contain">
+                    <label for="day">Selecciona dia</label>
+                    <select name="day" id="day">
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed" selected>Wednesday</option>
+            <option value="thu">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+            <option value="sun">Sunday</option>
+           </select>
+                </fieldset>
+                <input type="submit" data-inline="true" value="Enviar">
+            </form>
         </div>
     </div>
 

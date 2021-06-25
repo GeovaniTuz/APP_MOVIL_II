@@ -14,25 +14,34 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- cierre -->
     <title>Ejercicio</title>
+    <script>
+        $(document).on("pagecreate", "#pageone", function() {
+            $("p").on("tap", function() {
+                $(this).hide();
+            });
+        });
+    </script>
 </head>
 
 <body>
+
+
     <div data-role="page" id="pageone">
         <div data-role="header">
-            <h1>Block desplegable</h1>
+            <h1>El tap Event</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-                <h1>El icono de datos contraídos especifica el icono del botón</h1>
-                <p>El icono de datos expandidos especifica el icono del botón cuando se expande el contenido.</p>
-            </div>
+            <p>Si me tocas, Desaparezco!!.</p>
+            <p>Tocame tambien!</p>
+            <p>Tocame!</p>
         </div>
 
         <div data-role="footer">
             <h1>Pie de pagina</h1>
         </div>
     </div>
+
 
 </body>
 

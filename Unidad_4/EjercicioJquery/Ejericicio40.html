@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria query-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- cierre -->
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Bienvenido</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h2>Popup List</h2>
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-gear ui-btn-icon-left">Elige un Pais</a>
+            <div data-role="popup" id="myPopup">
+                <ul data-role="listview" data-inset="true" style="min-width:250px;">
+                    <li data-role="list-divider">Europa</li>
+                    <li><a href="#">Norway</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li data-role="list-divider">Asia</li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Thailand</a></li>
+                    <li data-role="list-divider">Africa</li>
+                    <li><a href="#">Zimbabwe</a></li>
+                    <li><a href="#">Uganda</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <h1>Footer Text</h1>
+        </div>
+    </div>
+</body>
+
+</html>
