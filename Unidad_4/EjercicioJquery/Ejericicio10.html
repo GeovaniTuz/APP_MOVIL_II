@@ -17,7 +17,34 @@
 </head>
 
 <body>
-
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Bienvenido</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Click para abrir popup con punta de flecha.</p>
+            <a href="#myPop1" data-rel="popup" class="ui-btn ui-btn-inline" data-position-to="#demo">Izquierda</a>
+            <a href="#myPop2" data-rel="popup" class="ui-btn ui-btn-inline" data-position-to="#demo">Arriba</a>
+            <a href="#myPop3" data-rel="popup" class="ui-btn ui-btn-inline" data-position-to="#demo">Derecha</a>
+            <a href="#myPop4" data-rel="popup" class="ui-btn ui-btn-inline" data-position-to="#demo">Abajo</a>
+            <div data-role="popup" id="myPop1" class="ui-content" data-arrow="l">
+                <p>Hay una flecha en mi borde Izquierdo.</p>
+            </div>
+            <div data-role="popup" id="myPop2" class="ui-content" data-arrow="t">
+                <p>Hay una flecha en mi borde de arriba.</p>
+            </div>
+            <div data-role="popup" id="myPop3" class="ui-content" data-arrow="r">
+                <p>Hay una flecha en mi borde Derecho.</p>
+            </div>
+            <div data-role="popup" id="myPop4" class="ui-content" data-arrow="b">
+                <p>Hay una flecha en mi borde de abajo.</p>
+            </div>
+            <p>Parrafo usado como ejemplo, la ventana popup aparece <span id="demo" style="color:red;">Aqui!</span>.</p>
+        </div>
+        <div data-role="footer">
+            <h1>Pie de pagina</h1>
+        </div>
+    </div>
 
 </body>
 

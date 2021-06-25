@@ -13,10 +13,36 @@
     <!-- Include the jQuery Mobile library -->
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- cierre -->
-    <title>Ejercicio</title>
+    <title>Posisamiento</title>
 </head>
 
 <body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Bienvenido</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Aparece centrado en la ventana</a>
+            <a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="#demo">Aparece sobre el elemento con id="demo"</a>
+            <a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="origin">Posición por default</a>
+            <div data-role="popup" id="myPopup1" class="ui-content">
+                <p>Centrado.</p>
+            </div>
+            <div data-role="popup" id="myPopup2" class="ui-content">
+                <p>Sobre elemento con id="demo".</p>
+            </div>
+            <div data-role="popup" id="myPopup3" class="ui-content">
+                <p>Sobre el elemento.</p>
+            </div>
+            <p>Esto es un parrafo.</p>
+            <p>otro parrafo.</p>
+            <p>Esto tambien es un parrafo.</p>
+            <p>Parrafo con un child <span id="demo" style="color:red;">span</span> elemento con id="demo", dentro del parrafo.</p>
+        </div>
+        <div data-role="footer">
+            <h1>Footer Text</h1>
+        </div>
+    </div>
 
 
 </body>

@@ -1,0 +1,3 @@
+1.-estrutura: http://snte-tics-educacion.blogspot.com/2019/04/15-barra-de-herramientas-jquery-mobile.html
+2.-iconos: http://snte-tics-educacion.blogspot.com/2019/04/20-barras-de-navegacion-con-iconos.html
+3.- panel: http://snte-tics-educacion.blogspot.com/2019/04/24-paneles-en-query-mobile.html

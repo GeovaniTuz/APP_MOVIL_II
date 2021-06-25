@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria query-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- cierre -->
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Bienvenido</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Abrir ventana Popup</a>
+            <div data-role="popup" id="myPopupDialog">
+                <div data-role="header">
+                    <h1>Encabezado dialogo</h1>
+                </div>
+                <div data-role="main" class="ui-content">
+                    <h2>Esto es un dialogo!</h2>
+                    <p>jQuery Mobile is bonito!</p>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Regresar</a>
+                </div>
+                <div data-role="footer">
+                    <h1>Pie dialogo</h1>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>Pie de pagina</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
