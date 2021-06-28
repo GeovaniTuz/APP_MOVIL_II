@@ -24,14 +24,14 @@ include("Conexion.php");
         <div data-role="content" ><!-- contenido de pagina -->
             <ul data-role="listview">
 
-                <?php
-                $peticion = $MySQLiconn->query("SELECT foto,titulo FROM ejes");
+            <?php
+                $peticion = $MySQLiconn->query("SELECT foto,titulo,id FROM ejes");
                 while ($fila = $peticion -> fetch_row()) {
                 ?>
-                    <li><a href="detalles_region.php">
-                    <img src="<?php echo $fila['foto'];?>" width="140" height="140">
-                    <h3><?php echo $fila['titulo']; ?></h3>
-                    <p><?php echo $fila['titulo']; ?></p>
+                    <li><a href="detalles_region.php" id="<?php echo $fila[2];?>" >
+                    <img src="<?php echo $fila[0];?>" width="140" height="140">
+                    <h3><?php echo utf8_encode($fila[1]); ?></h3>
+                    <p><?php echo utf8_encode($fila[1]); ?></p>
                     </a>
                     </li>
                 
