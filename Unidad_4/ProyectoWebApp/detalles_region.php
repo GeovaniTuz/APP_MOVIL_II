@@ -1,7 +1,9 @@
 <?php
 include("Conexion.php");
 
-$recuperaid = intval($_GET['id']);
+
+
+$recuperaid = intval($_GET['variable']);
 $peticion = $MySQLiconn->query("SELECT titulo,foto FROM ejes WHERE id=".$recuperaid);
 $fila = $peticion->fetch_array();
 //$peticion = $MySQLiconn->query("SELECT * FROM ejes WHERE id=".$recuperaid);
