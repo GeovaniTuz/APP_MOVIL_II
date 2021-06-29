@@ -22,16 +22,16 @@ include("Conexion.php");
         </div><!-- fin encabezado de pagina -->
 
         <div data-role="content" ><!-- contenido de pagina -->
-            <ul data-role="listview">
+            <ul data-role="listview" data-filter-placeholder="Buscar" data-filter="true">
 
-            <?php
-                $peticion = $MySQLiconn->query("SELECT foto,titulo,id FROM ejes");
-                while ($fila = $peticion -> fetch_row()) {
+                <?php
+                $peticion = $MySQLiconn->query("SELECT id,foto,titulo FROM ejes");//dependiendo a la consulta se usa el arreglo de 0 hasta n
+                while ($fila = $peticion -> fetch_row()) {//por ejemplo foto = 2, titulo = 1 y id = 0
                 ?>
-                    <li><a href="detalles_region.php" id="<?php echo $fila[2];?>" >
-                    <img src="<?php echo $fila[0];?>" width="140" height="140">
-                    <h3><?php echo utf8_encode($fila[1]); ?></h3>
-                    <p><?php echo utf8_encode($fila[1]); ?></p>
+                    <li><a href="detalles_region.php" id='<?php echo $fila[0];?>' >
+                    <img src="<?php echo $fila[1];?>" width="140" height="140">
+                    <h3><?php echo utf8_encode($fila[2]); ?></h3>
+                    <p><?php echo utf8_encode($fila[2]); ?></p>
                     </a>
                     </li>
                 
