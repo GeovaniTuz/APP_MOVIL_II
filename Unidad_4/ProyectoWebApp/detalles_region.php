@@ -4,7 +4,7 @@ include("Conexion.php");
 
 
 $recuperaid = intval($_GET['variable']);
-$peticion = $MySQLiconn->query("SELECT titulo,foto FROM ejes WHERE id=".$recuperaid);
+$peticion = $MySQLiconn->query("SELECT * FROM ejes WHERE id=".$recuperaid);
 $fila = $peticion->fetch_array();
 //$peticion = $MySQLiconn->query("SELECT * FROM ejes WHERE id=".$recuperaid);
 //$fila = $peticion -> fetch_row();//no se hace un while porque lo que retorna es un solo valor y los datos aqui se almacenan en un arreglo
@@ -27,12 +27,13 @@ WHERE id=".$_GET['id']
     <div data-role="page">
     <div data-role="header" data-theme="a" data-position="fixed"><!-- encabezado de pagina -->
             <a href="a" data-role="none"><img src="contenido/miniatura/logo_64.png" ></a>
-            <h3><?php echo $fila[0];?></h3>
+            <h3><?php echo $fila['titulo'];?></h3>
             <a href="a" data-role="none"><img src="contenido/miniatura/logo_64.png" ></a>
         </div><!-- fin encabezado de pagina -->
 
         <div data-role="content">
-                <img src="<?php echo $fila[1];?>" style="width=100%; heigth=100%">
+                <img src="<?php echo $fila['foto'];?>" style="width=100%; heigth=100%">
+                <p><?php echo $fila['d_completa']; ?></p>
             
         </div>
 

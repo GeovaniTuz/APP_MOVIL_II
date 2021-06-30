@@ -1,6 +1,7 @@
 <?php
 include("Conexion.php");
 
+
 ?>
 
 <!DOCTYPE html>
@@ -25,15 +26,16 @@ include("Conexion.php");
             <ul data-role="listview" data-filter-placeholder="Buscar" data-filter="true">
 
                 <?php
-                $peticion = $MySQLiconn->query("SELECT id,foto,titulo FROM ejes");//dependiendo a la consulta se usa el arreglo de 0 hasta n
-                while ($fila = $peticion -> fetch_row()) {//por ejemplo foto = 2, titulo = 1 y id = 0
+                $peticion = $MySQLiconn->query("SELECT * FROM ejes");//dependiendo a la consulta se usa el arreglo de 0 hasta n
+                while ($fila = $peticion -> fetch_array()) {//por ejemplo foto = 2, titulo = 1 y id = 0
                 ?>
-                    <li><a href="detalles_region.php?variable = <?php echo $fila[0];?>">
-                    
+                <form action="get" method="get"></form>
+                    <li><a href="detalles_region.php?variable=<?php echo $fila['id'];?>">
+                    <img src="<?php echo $fila['foto'];?>" width="140" height="140">
+                    <h3><?php echo ($fila['titulo']); ?></h3>
+                    <p><?php echo ($fila['descripcion']); ?></p>
                     </a>
-                    <img src="<?php echo $fila[1];?>" width="140" height="140">
-                    <h3><?php echo utf8_encode($fila[2]); ?></h3>
-                    <p><?php echo utf8_encode($fila[2]); ?></p>
+                    
                     </li>
                 
                 <?php
