@@ -42,7 +42,7 @@ include("Conexion.php");
                         <p><?php echo ($fila[1]); ?></p>
                     </a>
                 </li>
-
+<!--correcciones-->
                 <?php
                 }
                 ?>
