@@ -13,41 +13,47 @@ WHERE id=".$_GET['id']
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de la Región</title>
     <script type="text/javascript" src="jquery/jquery-1.6.4.min.js"></script>
     <script type="text/javascript" src="jquery/jquery.mobile-1.0.min.js"></script>
     <link type="text/css" rel="stylesheet" href="jquery/jquery.mobile-1.0.min.css">
 </head>
+
 <body>
     <div data-role="page">
-    <div data-role="header" data-theme="a" data-position="fixed"><!-- encabezado de pagina -->
-            <a href="a" data-role="none"><img src="contenido/miniatura/logo_64.png" ></a>
-            <h3><?php echo utf8_encode($fila[1]);?></h3>
-            <a href="a" data-role="none"><img src="contenido/miniatura/logo_64.png" ></a>
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <!-- encabezado de pagina -->
+            <a href="a" data-role="none"><img src="contenido/miniatura/logo_64.png"></a>
+            <h3><?php echo ($fila[1]);?></h3>
+            <a href="a" data-role="none"><img src="contenido/miniatura/logo_64.png"></a>
         </div><!-- fin encabezado de pagina -->
         <!-- titulo = 0, foto = 1, descripcion = 2 d_completa = 3 DE ANTES-->
         <!-- id = 0 titulo = 1, foto = 2, descripcion = 3 d_completa = 4 -->
         <div data-role="content">
-                <img src="<?php echo utf8_encode($fila[2]);?>" style="width:100%; heigth:140px;">
-                <ul data-role="listview" data-dividertheme="a">
-                    <li data-role="list-divider" style="text-align:center;">
-                        <span style="text-align:center;"> <?php echo utf8_encode($fila[1]);?></span>
-                    </li>
+            <img src="<?php echo ($fila[2]);?>" style="width:100%; heigth:140px;">
+            <ul data-role="listview" data-dividertheme="a">
+                <li data-role="list-divider" style="text-align:center;">
+                    <span style="text-align:center;"> <?php echo ($fila[1]);?></span>
+                </li>
 
-                    <li data-role="fieldcontain">
+                <li data-role="fieldcontain">
                     <!-- VACIO -->
-                    </li>
-                    
-                    <li>
-                    <span style="text-align:justify"><?php echo utf8_encode($fila[4]);?></span>
-                    </li>
+                </li>
 
-                </ul>
+                <li>
+                    <span style="text-align:justify"><?php echo ($fila[4]);?></span>
+                </li>
+
+            </ul>
         </div>
 
-        <div data-role="footer" data-position="fixed" data-theme="a"><!-- pie de pagina -->
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!-- pie de pagina -->
             <div data-role="navbar">
                 <ul>
                     <li><a href="index.php" data-icon="back" data-rel="back">Regresar</a></li>
@@ -57,4 +63,5 @@ WHERE id=".$_GET['id']
         </div><!-- fin pie de pagina -->
     </div>
 </body>
+
 </html>
