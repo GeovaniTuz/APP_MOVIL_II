@@ -1,23 +1,25 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 25-06-2013 a las 00:00:40
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.4.3
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 01-07-2021 a las 22:15:23
+-- Versión del servidor: 5.7.26
+-- Versión de PHP: 7.2.18
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `interaccion`
+-- Base de datos: `proyectowebapp`
 --
 
 -- --------------------------------------------------------
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `restaurantes`
 --
 
+DROP TABLE IF EXISTS `restaurantes`;
 CREATE TABLE IF NOT EXISTS `restaurantes` (
   `id` varchar(250) COLLATE utf8_spanish2_ci NOT NULL,
   `img` varchar(250) COLLATE utf8_spanish2_ci NOT NULL,
@@ -42,7 +45,9 @@ CREATE TABLE IF NOT EXISTS `restaurantes` (
 
 INSERT INTO `restaurantes` (`id`, `img`, `foto`, `titulo`, `direccion`, `telefono`, `etiquetas`) VALUES
 ('1', 'contenido/miniatura/defaul_restauran.png', 'contenido/miniatura/defaul_restauran_min.png', 'Restaurante Eugenia', 'Calle El Castillo, sector Lisboa', '', 'restauran,comida'),
-('1', 'contenido/miniatura/defaul_restauran.png', 'contenido/miniatura/defaul_restauran_min.png', 'Restaurante Abuela Mercedes', 'Calle La Marina frente a la playa.', '', 'restauran,comida');
+('1', 'contenido/miniatura/defaul_restauran.png', 'contenido/miniatura/defaul_restauran_min.png', 'Restaurante Abuela Mercedes', 'Calle La Marina frente a la playa.', '', 'restauran,comida'),
+('2', 'contenido/miniatura/defaul_restauran_min.png', 'contenido/miniatura/defaul_restauran_min.png', 'vallisoletano', 'calle 76 x 33 y 31, plaza.', '9869086789', 'Restaurante Vallisoletano');
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
