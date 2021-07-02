@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 01-07-2021 a las 22:15:16
+-- Tiempo de generación: 02-07-2021 a las 01:04:24
 -- Versión del servidor: 5.7.26
 -- Versión de PHP: 7.2.18
 
@@ -44,19 +44,9 @@ CREATE TABLE IF NOT EXISTS `hospedaje` (
 --
 
 INSERT INTO `hospedaje` (`id`, `titulo`, `img`, `foto`, `direccion`, `telefono`, `etiquetas`) VALUES
-('2', 'Casa de los aluxes', 'contenido/araya/lagunas/laguna_grande1.jpg', 'contenido/araya/lagunas/laguna_grande1.jpg', 'Terreno con camino de tierra', '9864523652', 'Laguna para disfrutar el lugar'),
-('2', 'Casa de los aluxes', 'contenido/araya/lagunas/laguna_grande1.jpg', 'contenido/araya/lagunas/laguna_grande1.jpg', 'Terreno con camino de tierra', '9864523652', 'Laguna para disfrutar el lugar'),
-('2', 'Casa de los aluxes', 'contenido/araya/lagunas/laguna_grande1.jpg', 'contenido/araya/lagunas/laguna_grande1.jpg', 'Terreno con camino de tierra', '9864523652', 'Laguna para disfrutar el lugar');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `hospedaje`
---
-ALTER TABLE `hospedaje` ADD FULLTEXT KEY `id` (`id`,`titulo`,`img`,`foto`,`direccion`,`telefono`,`etiquetas`);
-ALTER TABLE `hospedaje` ADD FULLTEXT KEY `id_2` (`id`,`titulo`,`img`,`foto`,`direccion`,`telefono`,`etiquetas`);
+('1', 'Posada Petrica', 'contenido/araya/posadas/petrica_previa.png', 'contenido/araya/posadas/petrica.JPG', 'Calle Nueva, Sector Plaza Bolívar', '+58(293)4371335', 'posadas,hoteles,estadia,dormir, cama'),
+('1', 'Posada Guacaraya', 'contenido/araya/posadas/Guacaraya_previa.png', 'contenido/araya/posadas/Guacaraya.JPG', 'Calle Bolívar, Sector Plaza Bolívar', '+58(293)4371312 ', 'posadas,hoteles,estadia,dormir, cama, guacaraya'),
+('2', 'Casa de los aluxes', 'contenido/araya/lagunas/laguna_grande1.jpg', 'contenido/araya/lagunas/laguna_grande1.jpg', 'Terreno con camino de tierra', '9853451234', 'Laguna para disfrutar el lugar');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
